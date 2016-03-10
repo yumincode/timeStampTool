@@ -36,4 +36,13 @@
  *  时间转换星期
  */
 + (NSString *)timeToWeek:(NSString *)time;
+
+/**
+ *  时间戳转换为当前日期
+ *
+ *  @param timeStamp 传入时间戳
+ *
+ *  @return 返回当前日期时间
+ */
++ (NSString *)timeStampToDateTime:(NSInteger)timeStamp;
 @end

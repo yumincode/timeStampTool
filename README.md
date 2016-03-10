@@ -1,1 +1,4 @@
-timeStampTool
+#时间戳工具
+#创建时间2016年3月10日
+#Version1.0
+
