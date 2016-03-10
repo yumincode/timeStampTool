@@ -19,13 +19,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSString *currentTime = [MyTools getCurrentStandarTime];
     NSLog(@"%@",currentTime);
-    NSString *currentStampTime = [MyTools getCurrentTimestamp];
-    NSLog(@"%@",currentStampTime);
+    NSLog(@"currentTime:%@",[MyTools timeStampToDateTime:1457600565]);
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end

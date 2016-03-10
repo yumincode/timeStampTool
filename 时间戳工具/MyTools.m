@@ -70,4 +70,12 @@
     NSString *newDateString = [outPutFormatter stringFromDate:formatterDate];
     return newDateString;
 }
+//时间戳转化为当前时间
++(NSString *)timeStampToDateTime:(NSInteger)timeStamp{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeStamp];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
+    [dateFormat setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormat stringFromDate:date];
+    return dateString;
+}
 @end
